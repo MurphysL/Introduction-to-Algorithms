@@ -24,13 +24,19 @@ typedef struct EdgeNode{
 typedef struct VNode{
     char data;
     EdgeNode *firstNode;
-}AdjList[MAX];
+}VNode , AdjList[MAX];
 
 typedef struct Graph{
     AdjList adjlist;
     int vexNum;
     int arcNum;
 }Graph;
+
+typedef struct Queue{
+    VNode node[MAX];
+    int Capacity;
+    int front , rear;
+}Queue;
 
 void CreateUDGraph(AMGraph *graph){
     cout << "输入顶点数及边数:"<< endl;
@@ -96,6 +102,9 @@ void CreateGraph(Graph **graph){
 }
 
 bool Visited[MAX];
+/**
+ * 邻接矩阵深度优先遍历
+ */
 void DFS(AMGraph * graph , int i){
     Visited[i] = true;
     cout << "已遍历" << graph->vexs[i] <<endl;
@@ -106,6 +115,7 @@ void DFS(AMGraph * graph , int i){
     }
 }
 void DFSTraverse(AMGraph *graph){
+    cout << "DFS遍历:" <<endl;
     for(int i = 0 ;i < graph->vexnum ; i ++){
         Visited[i] = false;
     }
@@ -116,6 +126,9 @@ void DFSTraverse(AMGraph *graph){
         }
     }
 }
+/**
+ * 邻接表深度优先遍历
+ */
 void DFS2(Graph *graph , int i){
     Visited[i] = true;
     EdgeNode *node = graph->adjlist[i].firstNode;
@@ -127,6 +140,7 @@ void DFS2(Graph *graph , int i){
     }
 }
 void DFSTraverse2(Graph *graph){
+    cout << "DFS遍历:" <<endl;
     for(int i = 0 ;i < graph->vexNum ;i ++){
         Visited[i] = false;
     }
@@ -138,16 +152,90 @@ void DFSTraverse2(Graph *graph){
     }
 }
 
+/**
+ * 队满
+ */
+bool isQueueFull(Queue *queue){
+    return (queue->rear + 1) % queue->Capacity == queue->front;
+}
+
+/**
+ * 队空
+ */
+bool isQueueEmpty(Queue *queue){
+    return queue->rear == queue->front;
+}
+
+/**
+ * 入队
+ */
+bool EnQueue(Queue *queue , VNode vnode){
+    if(!isQueueFull(queue)){
+        queue->node[++ queue->rear] = vnode;
+        return true;
+    }
+    return false;
+}
+
+/**
+ * 出队
+ */
+VNode DeQueue(Queue *queue){
+    if(!isQueueEmpty(queue)){
+        VNode node = queue->node[queue->rear];
+        queue->rear --;
+        return node;
+    }
+}
+
+/**
+ * 广度优先遍历
+ */
+void BFS(Graph *graph , int i ,Queue *queue){
+    VNode node = graph->adjlist[i];
+    cout <<"已遍历:" << node.data << endl;
+    Visited[i] = true;
+    if(!EnQueue(queue , node)){
+        VNode vnode = DeQueue(queue);
+        EdgeNode *enode = vnode.firstNode;
+        while(enode){
+            if(!Visited[enode->adjvex]){
+                EnQueue(queue , graph->adjlist[enode->adjvex]);
+            }
+            enode = enode->next;
+        }
+    }
+}
+void BFSTraverse(Graph *graph){
+    Queue *queue = new Queue;
+    queue->Capacity = graph->vexNum;
+    queue->front = 0;
+    queue->rear = 0;
+    //queue->node[0] = NULL;
+
+    for(int i = 0 ; i < graph->vexNum ;i ++){
+        Visited[i] = false;
+    }
+
+    for(int i = 0 ;i < graph->vexNum ;i ++){
+        if(!Visited[i]){
+            BFS(graph , i , queue);
+        }
+    }
+}
+
 int main(){
     //AMGraph *graph = new AMGraph;
     //CreateUDGraph(graph);
     //printUDGraph(graph);
 
-    //cout << "DFS遍历:" <<endl;
     //DFSTraverse(graph);
 
     Graph *graph;
     CreateGraph(&graph);
     DFSTraverse2(graph);
+
+    cout << "BFS遍历:" <<endl;
+    BFSTraverse(graph);
     return 0;
 }
