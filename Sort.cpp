@@ -1,4 +1,5 @@
 #include <iostream>
+#define Cutoff 100
 using namespace std;
 
 /**
@@ -52,22 +53,68 @@ void Insertion_Sort(int *a , int len){
 }
 
 /**
- *希尔排序
+ *希尔排序(特殊插入排序）
  */
 void Sell_Sort(int *a , int len){
     int Sedgewick[] = {929, 505, 209, 109, 41, 19, 5, 1, 0};//增量序列
-    int  i , n;
-    for(i = 0 ;Sedgewick[i] > len ; i ++){}
+    int  k , n , i;
+    for(k = 0 ;Sedgewick[k] > len ; k ++){}
 
-    for(int j = i ; j <= 9;j ++){
-        for(int m = j ;m < len;m ++){
-            int temp = a[m];
-            for(n = m;n >0 && a[n - Sedgewick[j]] > temp ;n += Sedgewick[j]){
-                a[n] = a[n - Sedgewick[j]];
+    for(int D = Sedgewick[k] ; D > 0 ; D = Sedgewick[++k]){
+        for(int j = D;j < len ;j ++){
+            int temp = a[j];
+            for(i = j ; i > 0 && a[i-1] > temp;i --){
+                a[i] = a[i-1];
             }
-            a[n] = temp;
+            a[i] = temp;
         }
     }
+}
+
+/**
+ * 快速排序
+ * best pivot中分 T=O(NlogN)
+ * worst pivot[0] T=O(N^2)
+ */
+void Swap(int *a , int left , int right){
+    int temp = a[left];
+    a[left] = a[right];
+    a[right] = temp;
+}
+int Median3(int *a , int left , int right){
+    int median = (left +right)/2;
+    if(a[median] < a[left])
+        Swap(a , left , median);
+    if(a[right] < a[left])
+        Swap(a , left , right);
+    if(a[median] > a[right])
+        Swap(a , median , right);
+    Swap(a , median , right-1);
+    return a[right -1];
+}
+void Quick_Sort(int *a , int left , int right){
+    if(Cutoff < right -left){
+        int pivot = Median3(a , left , right);
+        int Low = left , High = right -1;
+        for(;;){
+            while(a[++Low] < pivot);
+            while(pivot < a[--High]);
+            if(High < Low)
+                break;
+            else
+                Swap(a , Low , High);
+        }
+
+        Swap(a , Low , right - 1);
+        Quick_Sort(a , left , Low-1);
+        Quick_Sort(a , Low + 1 , right);
+    }else{
+        Insertion_Sort(a + left , right -left + 1);
+    }
+
+}
+void QSort(int *a , int len){
+    Quick_Sort(a , 0 , len -1);
 }
 
 void printArray(int *a , int len){
@@ -79,13 +126,16 @@ void printArray(int *a , int len){
 
 int main(){
     int a[] = {5 , 2 , 8 ,1 ,9 , 0 , 4 ,3 ,7 ,6};
-    Bubble_Sort(a , 10);
-    printArray(a , 10);
+    //Bubble_Sort(a , 10);
+    //printArray(a , 10);
 
-    Insertion_Sort(a , 10);
-    printArray(a , 10);
+    //Insertion_Sort(a , 10);
+    //printArray(a , 10);
 
     Sell_Sort(a , 10);
     printArray(a , 10);
+
+    //QSort(a , 10);
+    //printArray(a , 10);
     return 0;
 }
