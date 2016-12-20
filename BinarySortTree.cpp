@@ -99,7 +99,7 @@ int main(){
     InsertBST(&bintree , n);
 
     cout << "中序遍历:" <<endl;
-    InOrderTraversal(bintree);
+    //InOrderTraversal(bintree);
 
     cin >>n;
     cout <<"输入要删除的数:" <<endl;
