@@ -3,6 +3,10 @@
 #include <string.h>
 #define MAX 255
 
+/**
+ * Brute-Force
+ */
+
 typedef struct String{
     char c[MAX];
     int length;
@@ -28,25 +32,25 @@ int BFMatch(String *s , String *t , int pos){
     return num;
 }
 
-void initString(String *s , String *t , int *pos){
-    printf("主串:");
+void initString(String *s , String *t){
+    printf("Primary String:");
     scanf("%s" , s->c);
     s->length = strlen(s->c);
 
-    printf("\n子串:");
+    printf("\nSubstring:");
     scanf("%s" , t->c);
     t->length = strlen(t->c);
-
-    printf("\n开始的位置:");
-    scanf("%d" , pos);
 }
 
 int main(){
     String *s = (String *)malloc(sizeof(String));
     String *t = (String *)malloc(sizeof(String));
-    int pos;
-    initString(s , t , &pos);
+    initString(s , t);
 
-    printf("%d" , BFMatch(s , t , pos));
+    int pos;
+    printf("\nLocation:");
+    scanf("%d" , &pos);
+
+    printf("\ntimes:%d" , BFMatch(s , t , pos));
     return 0;
 }
