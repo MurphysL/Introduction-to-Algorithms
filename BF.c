@@ -5,6 +5,9 @@
 
 /**
  * Brute-Force
+ *
+ * best T=O(m+n)
+ * worst T=O(m*n)
  */
 
 typedef struct String{
