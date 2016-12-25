@@ -76,13 +76,13 @@ void CreateBST(BinTree **bintree){
     }
 }
 
-void PreOrderTraversal(BinTree *bintree){
+void  InOrderTraversal(BinTree *bintree){
     if(bintree == NULL){
         return;
     }else{
-        PreOrderTraversal(bintree->left);
+        InOrderTraversal(bintree->left);
         cout << bintree->num <<endl;
-        PreOrderTraversal(bintree->right);
+        InOrderTraversal(bintree->right);
     }
 }
 
@@ -91,7 +91,7 @@ int main(){
     CreateBST(&bintree);
 
     cout << "前序遍历:" <<endl;
-    PreOrderTraversal(bintree);
+    InOrderTraversal(bintree);
 
     int n;
     cout << "随机插入一个数:" <<endl;
@@ -106,7 +106,7 @@ int main(){
     BinTree *newTree = DeleteBST(bintree , n);
 
     cout <<"中序遍历:" <<endl;
-    PreOrderTraversal(newTree);
+    InOrderTraversal(newTree);
 
     return 0;
 }

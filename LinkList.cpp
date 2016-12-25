@@ -33,7 +33,7 @@ LList * initList(LList *head){
 
 void printList(LList *llist){
     LList *temp = llist;
-
+    cout << " " <<endl;
     while(temp != NULL){
         cout << temp->num << endl;
         temp = temp->next;
@@ -75,6 +75,39 @@ int DeleteList(LList *llist , int pos){
     return -1;
 }
 
+/**
+ * 删除链表中所有值为num的数据
+ */
+void DeleteList2(LList *llist , int num){
+    while(llist){
+        if(llist->num == num){
+            LList *t = llist->next;
+            llist->num = llist->next->num;
+            llist->next = llist->next->next;
+        }
+        llist = llist->next;
+    }
+}
+
+/**
+ * 逆转矩阵(**)
+ */
+void Contrary(LList **llist){
+    LList *current = *llist;
+    LList *left = NULL;
+    LList *right = NULL;
+    while(current){
+        right = current->next;
+        current->next = left;
+        left = current;
+        current = right;
+    }
+    *llist = left;
+}
+
+/**
+ * 插入数据
+ */
 int InsertList(LList *llist , int pos , int n){
     LList *temp = llist;
     int i = 1;
@@ -102,33 +135,40 @@ int main(){
 
     llist = initList(head);
 
-    cout << "查找的位置" << endl;
-    cin >> pos;
-    if(-1 == (i = GetElem(llist , pos))){
-       cout << "错误位置";
-    }else{
-        cout << i << endl;
-    }
+//    cout << "查找的位置" << endl;
+//    cin >> pos;
+//    if(-1 == (i = GetElem(llist , pos))){
+//       cout << "错误位置";
+//    }else{
+//        cout << i << endl;
+//    }
 
-    cout << "插入的位置与值" <<endl;
-    cin >> pos;
-    cin >> i;
+//    cout << "插入的位置与值" <<endl;
+//    cin >> pos;
+//    cin >> i;
+//
+//    if(-1 == InsertList(llist , pos , i)){
+//        cout << "位置错误" <<endl;
+//    }else{
+//        printList(llist);
+//    }
 
-    if(-1 == InsertList(llist , pos , i)){
-        cout << "位置错误" <<endl;
-    }else{
-        printList(llist);
-    }
+//    cout << "输入删除的位置" <<endl;
+//    cin >>i;
+//    if(-1 == DeleteList(llist , i)){
+//        cout << "错误位置" <<endl;
+//    }else{
+//        cout << "删除成功" << endl;
+//        printList(llist);
+//    }
 
-    cout << "输入删除的位置" <<endl;
-    cin >>i;
-    if(-1 == DeleteList(llist , i)){
-        cout << "错误位置" <<endl;
-    }else{
-        cout << "删除成功" << endl;
-        printList(llist);
-    }
+      //cout << "输入要删除的值:" <<endl;
+      //cin >> i;
+      //DeleteList2(llist , i);
+      //printList(llist);
 
+    Contrary(&llist);
+    printList(llist);
 
     return 0;
 }
