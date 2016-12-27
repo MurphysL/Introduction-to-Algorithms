@@ -114,11 +114,11 @@ void CreateBST(AVLNode **node){
     }
 }
 
-void PreOrderTraversal(AVLNode *node){
+void InOrderTraversal(AVLNode *node){
     if(node != NULL){
-        PreOrderTraversal(node->left);
+        InOrderTraversal(node->left);
         cout << node->num <<endl;
-        PreOrderTraversal(node->right);
+        InOrderTraversal(node->right);
     }
 }
 
@@ -127,7 +127,7 @@ int main(){
     CreateBST(&node);
 
     cout <<"ÖÐÐò±éÀú:" <<endl;
-    PreOrderTraversal(node);
+    InOrderTraversal(node);
 
     return 0;
 }
