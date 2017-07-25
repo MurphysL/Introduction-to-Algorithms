@@ -1,4 +1,4 @@
-
+package C10.code
 /**
  * 10.1-2
  *
@@ -46,7 +46,7 @@ class Stack(val capacity : Int = 10){
 
 fun main(args: Array<String>) {
     val stack = Stack(5)
-    //println(stack.pop(Position.LEFT))
+    //println(stack.C10.code.pop(C10.code.Position.LEFT))
     stack.push(Position.LEFT, 1)
     stack.push(Position.RIGHT, 2)
     stack.push(Position.RIGHT, 3)
