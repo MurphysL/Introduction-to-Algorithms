@@ -13,7 +13,7 @@
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-2.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.2-2.kt
 
 头插，并从链表头 POP
 
@@ -22,7 +22,7 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-2.k
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-3.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.2-3.kt
 
 尾插，并从链表头 DEQUEUE
 
@@ -32,7 +32,7 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-3.k
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-4.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.2-4.kt
 
 将要查找的值存放于哨兵中，判断返回的节点是否为哨兵。
 
@@ -42,7 +42,7 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-4.k
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-5.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.2-5.kt
 
 ## 10.2-6
 
@@ -58,7 +58,7 @@ S1，S2 使用链表实现，改变链表头尾指针即可。
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/s10.2-7.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.2-7.kt
 
 
 ## 10.2-8

@@ -108,6 +108,7 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/
 https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.1-6.kt
 
 > push：O(1)
+
 > pop：O(n)
 
 ## 10.1-7
@@ -119,6 +120,7 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/
 https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/code/s10.1-7.kt
 
 > push：O(1)
+
 > pop：O(n)
 
 
