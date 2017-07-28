@@ -1,13 +1,15 @@
 # CLRS 6.1
 
-##6.1-1
+## 6.1-1
 **What are the minimum and maximum numbers of elements in a heap of height h?**
 
 **Answer：**
 
-maximum : $2^{h+1} - 1$
+maximum :
+![](http://latex.codecogs.com/gif.latex?2^{h+1}%20-%201)
 
-minimum : $2^h$
+minimum :
+![](http://latex.codecogs.com/gif.latex?2^h)
 
 
 ## 6.1-2
@@ -16,7 +18,7 @@ minimum : $2^h$
 
 **Answer：**
 
-$ 2^{h +1} - 1 \ge x \ge 2^h  =>  lgx \ge h \ge lg(x+1)-1$
+![](http://latex.codecogs.com/gif.latex?2^{h%20+1}-1\ge%20x\ge2^h=%3E%20lgx%20\ge%20h%20\ge%20lg\(x+1\)-1)
 
 ## 6.1-3
 
