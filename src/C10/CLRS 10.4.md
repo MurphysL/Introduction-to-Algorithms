@@ -18,7 +18,7 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/img/s10.4-1.kt)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C10/img/s10.4-1.png)
 
 ## 10.4.2
 **Write an O(n)-time recursive procedure that, given an n-node binary tree, prints out the key of each node in the tree.**
