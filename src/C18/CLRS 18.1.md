@@ -16,7 +16,7 @@
 
 **For what values of t is the tree of Figure 18.1 a legal B-tree?**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C18/img/t18.1.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C18/img/t18.1.jpg)
 
 **Answer：**
 
