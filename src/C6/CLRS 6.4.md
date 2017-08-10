@@ -16,7 +16,9 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s
 **Answer：**
 
 **初始化：**第一次循环之前，此时为最大堆，子数组为空。
+
 **保持：**每次迭代，最大堆堆顶元素被交换，交换后调用 MAX-HEAPIFY( A,  1)保持最大堆性质。经 i 此迭代后，子数组为 A[i+1..n]，为从小到大排序的数组。
+
 **终止：**i = 1 时过程终止。
 
 
