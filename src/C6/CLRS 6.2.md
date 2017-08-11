@@ -4,6 +4,7 @@
 **Using Figure 6.2 as a model, illustrate the operation of MAX-HEAPIFY(A, 3) on the array A = 27,17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0.**
 
 **Answer：**
+
 ![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.1.png)
 ![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.2.png)
 ![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.3.png)
@@ -70,4 +71,6 @@ MAX_HEAPIFY(A, i):
 **Show that the worst-case running time of MAX-HEAPIFY on a heap of size n is Ω(lg n). (Hint: For a heap with n nodes, give node values that cause MAX-HEAPIFY to be called recursively at every node on a path from the root down to a leaf.)**
 
 **Answer：**
+
+最坏情况，MAX-HEAPIFY 会从根节点递归调用到叶结点，因为 h=lgn 所以最坏运行情况为 Ω(lgn)
 

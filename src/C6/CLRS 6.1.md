@@ -35,7 +35,7 @@ minimum :
 
 **Answer：**
 
-叶子结点
+叶结点
 
 ## 6.1-5
 
@@ -43,7 +43,7 @@ minimum :
 
 **Answer：**
 
-不一定，递减数组不是。
+不一定，递减数组不是
 
 ## 6.1-6
 
@@ -52,6 +52,7 @@ minimum :
 **Answer：**
 
 不是
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.1-6.png)
 
 ## 6.1-7
 
@@ -59,5 +60,5 @@ minimum :
 
 **Answer：**
 
-最后一个叶结点序号为 n ， 因此其父节点序号为 n/2，其之后的节点均为子结点。
+最后一个叶结点序号为 n ， 因此其父结点序号为 n/2，其之后的节点均为子结点
 

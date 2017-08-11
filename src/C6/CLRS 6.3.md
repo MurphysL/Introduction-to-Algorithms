@@ -1,0 +1,28 @@
+# CLRS 6.3
+
+## 6.3-1
+
+**Using Figure 6.3 as a model, illustrate the operation of BUILD-MAX-HEAP on the array A = [5, 3, 17, 10, 84, 19, 6, 22, 9].**
+
+**Answer：**
+
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.3-1.png)
+
+## 6.3-2
+
+**Why do we want the loop index i in line 2 of BUILD-MAX-HEAP to decrease from ⌞length[A]/2⌟ to 1 rather than increase from 1 to ⌞length[A]/2⌟?**
+
+**Answer：**
+
+从 1 开始，其子树并非最大堆
+
+## 6.3-3
+
+**Show that there are at most  nodes of height h in any n-element heap.**
+
+**Answer：**
+
+![](https://camo.githubusercontent.com/8e1f4603fe5a371ab5bcb38f37db20c0617bbb64/687474703a2f2f6c617465782e636f6465636f67732e636f6d2f6769662e6c617465783f25323032253545253742685f302537442532302535436c652532306e2532302535436c6525323032253545253742685f302b312537442d31253230)
+
+![](https://camo.githubusercontent.com/a38732f4e984296930e8da394cc5a8d9b113f62b/687474703a2f2f6c617465782e636f6465636f67732e636f6d2f6769662e6c617465783f2532302535436c6365696c2532306e2f2832253545253742682b3125374429253230253543726365696c2532302535436c652532302535436c6365696c2532302832253545253742685f302b312537442d31292f2832253545253742682b3125374429253230253543726365696c2532303d25323032253545253742685f302d68253744)
+
