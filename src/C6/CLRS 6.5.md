@@ -1,5 +1,21 @@
 # CLRS 6.5
 
+## 6.6-1
+
+**Illustrate the operation of HEAP-EXTRACT-MAX on the heap A = [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1].**
+
+**Answer：**
+
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.5-1.png)
+
+## 6.5-2
+
+**Illustrate the operation of MAX-HEAP-INSERT(A, 10) on the heap A = [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1]. Use the heap of Figure 6.5 as a model for the HEAP-INCREASE-KEY call.**
+
+**Answer：**
+
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.5-2.png)
+
 ## 6.5-3
 
 **Write pseudocode for the procedures HEAP-MINIMUM, HEAP-EXTRACT-MIN, HEAP- DECREASE-KEY, and MIN-HEAP-INSERT that implement a min-priority queue with a min-heap.**
@@ -23,9 +39,9 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s
 
 **Answer：**
 
-**初始化：**第一次循环迭代开始之前，除 A[heap.size] 外，其他元素均满足最大堆的性质。
-**保持：**循环过程中，不断交换 key 与 其父结点的值使其满足最大堆性质。
-**终止：**当 i = 1 时，所有元素已按最大堆的性质排好。
+**初始化：** 第一次循环迭代开始之前，除 A[heap.size] 外，其他元素均满足最大堆的性质。
+**保持：** 循环过程中，不断交换 key 与 其父结点的值使其满足最大堆性质。
+**终止：** 当 i = 1 时，所有元素已按最大堆的性质排好。
 
 ## 6.5-6
 
@@ -48,8 +64,8 @@ HEAP-INCREASE-KEY(A, I, key):
 **Show how to implement a first-in, first-out queue with a priority queue. Show how to implement a stack with a priority queue. (Queues and stacks are defined in Section 10.1.)**
 
 **Answer：**
-* **队列：**将新插入的值赋予更低的优先级
-* **栈：**将新插入的值赋予更高的优先级
+* **队列：** 将新插入的值赋予更低的优先级
+* **栈：** 将新插入的值赋予更高的优先级
 
 ## 6.5-8
 
@@ -61,11 +77,13 @@ HEAP-INCREASE-KEY(A, I, key):
 * 当 **A[A.heap-size] > A[i]** 时，时间复杂度为 O(lgn)
 * 当 **A[A.heap-size] < A[i]** 时，时间复杂度为 O(lgn)，例：
 
->      10
->    /    \
->   5      9
->  / \    / \
-> 2   3  7   8
+```
+      10
+    /    \
+   5      9
+  / \    / \
+ 2   3  7   8
+```
 
 https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s6.5-8.kt
 
