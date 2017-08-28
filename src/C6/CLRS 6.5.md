@@ -39,9 +39,11 @@ https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s
 
 **Answer：**
 
-**初始化：** 第一次循环迭代开始之前，除 A[heap.size] 外，其他元素均满足最大堆的性质。
-**保持：** 循环过程中，不断交换 key 与 其父结点的值使其满足最大堆性质。
-**终止：** 当 i = 1 时，所有元素已按最大堆的性质排好。
+**初始化：** 第一次循环迭代开始之前，除 A[heap.size] 外，其他元素均满足最大堆的性质
+
+**保持：** 循环过程中，不断交换 key 与 其父结点的值使其满足最大堆性质
+
+**终止：** 当 i = 1 时，所有元素已按最大堆的性质排好
 
 ## 6.5-6
 
@@ -64,7 +66,9 @@ HEAP-INCREASE-KEY(A, I, key):
 **Show how to implement a first-in, first-out queue with a priority queue. Show how to implement a stack with a priority queue. (Queues and stacks are defined in Section 10.1.)**
 
 **Answer：**
+
 * **队列：** 将新插入的值赋予更低的优先级
+
 * **栈：** 将新插入的值赋予更高的优先级
 
 ## 6.5-8
