@@ -5,9 +5,9 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.1.png)
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.2.png)
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.2-1.3.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.2-1.1.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.2-1.2.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.2-1.3.png)
 
 ## 6.2-2
 

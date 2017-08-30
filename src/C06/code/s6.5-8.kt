@@ -1,4 +1,4 @@
-package C6.code
+package C06.code
 
 //以最小堆为例
 fun PriorityQueue.delete(pos : Int){

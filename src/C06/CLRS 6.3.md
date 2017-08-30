@@ -6,7 +6,7 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.3-1.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.3-1.png)
 
 ## 6.3-2
 

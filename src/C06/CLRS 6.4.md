@@ -6,7 +6,7 @@
 
 **Anwser：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s6.4-1.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/code/s6.4-1.kt
 
 ## 6.4-2
 

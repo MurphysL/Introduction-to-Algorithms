@@ -6,7 +6,7 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.5-1.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.5-1.png)
 
 ## 6.5-2
 
@@ -14,7 +14,7 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/img/s6.5-2.png)
+![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.5-2.png)
 
 ## 6.5-3
 
@@ -22,7 +22,7 @@
 
 **Answer：**
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s6.5-3.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/code/s6.5-3.kt
 
 ## 6.5-4
 
@@ -89,5 +89,5 @@ HEAP-INCREASE-KEY(A, I, key):
  2   3  7   8
 ```
 
-https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C6/code/s6.5-8.kt
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/code/s6.5-8.kt
 

@@ -6,7 +6,7 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C32/code/s32.1-1.kt)
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C32/code/s32.1-1.kt
 
 ## 32.1-2
 
@@ -46,5 +46,5 @@
 
 **Answer：**
 
-![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C32/code/s32.1-4.kt)
+https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C32/code/s32.1-4.kt
 

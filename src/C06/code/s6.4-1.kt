@@ -1,4 +1,4 @@
-package C6.code
+package C06.code
 
 class Heap1(val capacity : Int){
     val values = IntArray(capacity + 1)
