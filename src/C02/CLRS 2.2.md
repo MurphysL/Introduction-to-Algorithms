@@ -2,7 +2,9 @@
 
 ## 2.2-1
 
-**Express the function ** ![](http://latex.codecogs.com/gif.latex?n^3/1000 - 100n^2-100n+3) **in terms of Θ-notation.**
+**Express the function **
+![](http://latex.codecogs.com/gif.latex?n^3/1000 - 100n^2-100n+3)
+**in terms of Θ-notation.**
 
 **Answer：**
 

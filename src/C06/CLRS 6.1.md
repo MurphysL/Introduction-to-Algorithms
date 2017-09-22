@@ -52,6 +52,7 @@ minimum :
 **Answer：**
 
 不是
+
 ![](https://github.com/MurphysL/Introduction-to-Algorithms/blob/master/src/C06/img/s6.1-6.png)
 
 ## 6.1-7
